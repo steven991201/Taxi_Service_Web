@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-image:url('/TermProject/Background.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+        }
+        span{
+            background-color: rgba(0, 0, 0, 0.6);
+            display:inline-block;
+        }
+        p{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .c { font-family: sans-serif; }
+    </style>
+</head>
+<body>
+<span><font class="c" color="white" size="5">     Select the Room ID that you want to join    </font></span><br>
+<br>
+<span><font class="c" color="white" size="4"> Room ID :  </font></span><br>
+<form method="post" action="join_result.php">
+    <input type="text" name="num" maxlength="5" size="7">
+    <br>
+    <input type="submit" value="Go">
+</form>
+
+</body>
+</html>

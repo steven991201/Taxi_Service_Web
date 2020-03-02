@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-image:url('/TermProject/Background.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+        }
+        span{
+            background-color: rgba(0, 0, 0, 0.6);
+            display:inline-block;
+        }
+        p{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .c { font-family: sans-serif; }
+    </style>
+</head>
+<body>
+<center>
+<form method="post" action="taxi_room_result.php">
+    <p><font class="c" color="white" size="6"> Room Information </font></p>
+    <table>
+        <tr>
+            <td><span><font class="c" color="white" size="3"> Departure point </font></span></td>
+            <td><input type="text" name="departure" size="20" maxlength="20"></td>
+        </tr>
+        <tr>
+            <td><span><font class="c" color="white" size="3"> Arrival point </font></span></td>
+            <td><input type="text" name="arrival" size="20" maxlength="20"></td>
+        </tr>
+        <tr>
+            <td><span><font class="c" color="white" size="3"> Departure Day </font></span></td>
+            <td><input type="text" name="day" size="20" maxlength="10"> <span><font class="c" color="white" size="3"> type in form of MMDD(ex:0906 , 1225) </font></span></td>
+        </tr>
+        <tr>
+            <td><span><font class="c" color="white" size="3"> Departure Time </font></span></td>
+            <td><span><font class="c" color="white" size="3"> Hour </font></span> <select name="hour">
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+            </select>
+            <span><font class="c" color="white" size="3"> Minute </font></span> <select name="minute">
+                    <option value="00">00</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                </select> <span><font class="c" color="white" size="3"> If your departure time is between 15:10~15:20, select 15:10.</font></span> </td>
+        </tr>
+        <tr>
+            <td colspan="2"><a href="taxi_room_result.php"><input type="submit" name="register" value="Make Room"></a>
+            <a href="main.html"><input type="button" value="Go back to home"></a></td>
+        </tr>
+    </table>
+</form>
+</center>
+</body>
+</html>

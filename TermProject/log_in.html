@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-image:url('/TermProject/Background.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+        }
+        span{
+            background-color: rgba(0, 0, 0, 0.6);
+            display:inline-block;
+        }
+        p{
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .c { font-family: sans-serif; }
+    </style>
+</head>
+<body>
+<center>
+    <br>
+    <br>
+    <br>
+
+<form method="post" action="log_in_result.php">
+    <p><font class="c" color="white" size="6"> Log in </font></p>
+<table>
+    <tr>
+        <td><span><font class="c" color="white" size="3"> ID </font></span></td>
+        <td><input type="text" name="log_id" maxlength="15" size="20"></td>
+    </tr>
+    <tr>
+        <td><span><font class="c" color="white" size="3"> Password </font></span></td>
+        <td><input type="password" name="log_pw" maxlength="20" size="20"></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" value="Log in">
+            <input type="reset" value="Reset">
+            <a href="main_before_login.html"><input type="button" value="Go back"></a>
+        </td>
+    </tr>
+</table>
+</form>
+</center>
+</body>
+</html>
